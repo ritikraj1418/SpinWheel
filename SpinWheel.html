@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin & Win</title>
+    <link rel="stylesheet" href="styles/spin.css">
+    <!-- <link rel="stylesheet" href="styles/global.css"> -->
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/welcome.js"></script>
+    <script defer src="scripts/spinWheel4.js"></script>
+</head>
+<body>
+
+    <h1>🎡 Spin & Win Prizes 🎁</h1>
+
+    <div class="wheel-container">
+        <div class="wheel-wrapper">
+            <canvas id="wheelCanvas" width="350" height="350"></canvas>
+            <div class="pointer"></div>
+        </div>
+        <button id="spinButton" onclick="startSpin()">🎰 Spin</button>
+    </div>
+
+   <div class="countdown-container">
+        <p>Next Spin in: <span id="countdown">00:00</span></p>
+    </div>
+
+    <h2>🏆 Won Prizes:</h2>
+    <ul id="prizeList"></ul>
+
+</body>
+</html>
